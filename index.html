@@ -43,7 +43,7 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("data.json", function(error, data) {
+    d3.json("./data.json", function(error, data) {
         if (error) throw error;
         root = d3.hierarchy(data);
         root.x0 = 0;
